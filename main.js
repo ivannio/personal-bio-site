@@ -6,13 +6,13 @@ const printToDOM = (message, divID) => {
 
 const projects = [
 {
-title: "Cool Project", 
+title: "Pet Adoption", 
 screenshot: "http://gotoflashgames.com/files/file/033.jpg", 
-description: "This is the best project", //'the what', 'the why', and 'the how'.
+description: "Creates cards based on which button is clicked", //'the what', 'the why', and 'the how'.
 technologiesUsed: "HTML, CSS, Vanilla JavaScript, Version Control with Github",
 available: true,
-url: "https://github.com/nss-evening-cohort-8/js-part-deux",
-githubUrl: "https://github.com/nss-evening-cohort-8/js-part-deux"
+url: "https://github.com/ivannio/pet-adoption",
+githubUrl: "https://github.com/ivannio/pet-adoption"
 },
 {
 title: "Cool Project", 
@@ -51,16 +51,20 @@ for (let i = 0; i < arr.length; i ++) {
   stringToPrint = `
     <div class="project-card">
       <h3>${project.title}</h3>
-      <img src="${project.screenshot}">
+      <img class="project-img" src="${project.screenshot}">
       <p>${project.description}</p>  
       <p>Technologies used: ${project.technologiesUsed}</p>
       <h6>${project.url}</h6>
       <h6>${project.githubUrl}</h6>
     </div>
-  `;
-  printToDOM(stringToPrint, "projectsPage");
-  }
-}   
+    `;
+    printToDOM(stringToPrint, "projectsPage");
+    }
+  }   
 }
 
-createProjectCards(projects);
+const init = () => {
+  createProjectCards(projects);
+}
+
+init();
