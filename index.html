@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ivan Phelps</title>
   <link rel="stylesheet" href="main.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
   
 </head>
 
 <body>
   <!-- Navigation -->
   <nav>
-    <h1>Ivan Phelps</h1>
+    <h1 class="dm-serif" id="name-headline">Ivan Phelps</h1>
     <ul id="navLinks">
       <li><a id="navToBio">Bio</a></li>
       <li><a id="navToTechnologies">Technologies</a></li>
@@ -26,9 +27,14 @@
     <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
   </div>
   <div class="fullPage" id="technologiesPage">
-    <h1>Technologies Learned:</h1>
-    
-    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
+    <h1 class="dm-serif">Technologies Learned:</h1>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Visual Studio Code</li>
+      <li>Version control using Git and GitHub</li>    
+    </ul>
   </div>
   <div class="fullPage" id="projectsPage"></div>
   
@@ -36,7 +42,13 @@
 
   <!-- Footer -->
   <footer class="page-footer">
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
+    <hr>
+    <div id="footer-items">
+      <p class="dm-serif"><b>Contact and Links:</b></p>
+      <a href="mailto:stevenivanphelps@gmail.com"><img class="footer-icon" src="Gmail_Icon.png"></a>
+      <a href="https://github.com/ivannio"><img class="footer-icon" src="github-512.png"></a>
+      <a href="https://www.linkedin.com/in/ivan-phelps"><img class="footer-icon" src="Linkedin-Transparent.png"></a>
+    </div>
   </footer>
   <!-- End Footer -->
   <script src="main.js"></script>
